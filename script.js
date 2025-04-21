@@ -5,26 +5,11 @@ const ores = document.querySelectorAll(".ore");
 let scrollTimer;
 let isClimbing = false;
 
-// Event listener for scrolling
+
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
-
-  // Move the stickman down with scroll
-  stickman.style.top = `${scrollY * 0.3}px`; // Adjust multiplier for speed
-
-  // Swap to climbing GIF when scrolling
-  if (!isClimbing) {
-    stickmanImg.src = "stickman-climbing.gif"; // Make sure this file exists
-    isClimbing = true;
-  }
-
-  // Revert to static image after 250ms of no scroll
-  clearTimeout(scrollTimer);
-  scrollTimer = setTimeout(() => {
-    stickmanImg.src = "stickman.png";
-    isClimbing = false;
-  }, 250);
-});
+  stickman.style.top = `${scrollY * 1.2}px`; //multiplier for speed
+})
 
 // Event listener for ore clicks
 ores.forEach(ore => {
