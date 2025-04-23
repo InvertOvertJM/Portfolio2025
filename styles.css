@@ -14,7 +14,7 @@ body {
   
   .rope {
     width: 2px;
-    height: 200vh; /* Longer rope for a longer scroll */
+    height: 200vh; 
     background-color: #b37406;
     position: absolute;
     left: 50%;
@@ -25,12 +25,12 @@ body {
   
   .stickman {
     width: 40px;
-    position: fixed; /* Keep stickman at the top of the viewport */
+    position: fixed; 
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
-    transition: top 0.2s ease-out;
+ 
   }
   
   .stickman img {
@@ -177,10 +177,9 @@ body {
   }
   
   .sack-btn {
-    background-color: #cd7f32; /* Sack color (can be changed) */
+    background-color: #cd7f32; 
   }
   
   .phone-btn {
-    background-color: #4CAF50; /* Phone color (can be changed) */
+    background-color: #4CAF50; 
   }
-  
