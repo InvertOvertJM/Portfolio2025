@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cave Portfolio</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,13 +13,13 @@
       <div class="crack left"></div>
       <div class="project">
         <a>
-        <div class="ore bronze"></div>
+        <div class="ore bronze" id="scaling"></div>
       </a>
         <div class="label">Scaling Website</div>
       </div>
       <div class="crack right"></div>
       <div class="project">
-        <div class="ore bronze"></div>
+        <div class="ore bronze" id="faith"></div>
         <div class="label">Faith App</div>
       </div>
       <div class="rock left"></div>
@@ -28,12 +29,12 @@
     <div class="project-layer">
       <div class="crack left"></div>
       <div class="project">
-        <div class="ore bronze"></div>
+        <div class="ore bronze" id="lob"></div>
         <div class="label">Lobotomy Corp Website</div>
       </div>
       <div class="crack right"></div>
       <div class="project">
-        <div class="ore white"></div>
+        <div class="ore white" id="clasherv1"></div>
         <div class="label">clasherV1</div>
       </div>
       <div class="rock right"></div>
@@ -43,7 +44,7 @@
     <div class="project-layer">
       <div class="crack left"></div>
       <div class="project">
-        <div class="ore white"></div>
+        <div class="ore white" id="themed"></div>
         <div class="label">Themed Website</div>
       </div>
       <div class="crack right"></div>
@@ -88,5 +89,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 </html>

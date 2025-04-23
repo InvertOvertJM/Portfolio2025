@@ -93,8 +93,8 @@ body {
  
   .crack {
     width: 80px;
-    height: 140px;
-    background-color: #222;
+    height: 190px;
+    background-color: #3e3e3e;
     clip-path: polygon(0 0, 100% 20%, 20% 100%, 0% 80%);
     opacity: 0.5;
   }
@@ -108,12 +108,12 @@ body {
   }
   
   .rock {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-color: #333;
     border-radius: 50%;
     position: absolute;
-    z-index: 3;
+    z-index: 0;
     opacity: 0.6;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   }
@@ -130,13 +130,12 @@ body {
     transform: translateY(-50%);
   }
   
-  /* Stalactites (hanging rocks) */
   .stalactite {
-    width: 20px;
-    height: 60px;
+    width: 200px;
+    height: 20px;
     background-color: #444;
     position: absolute;
-    z-index: 3;
+    z-index: 1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   }
   
@@ -149,8 +148,7 @@ body {
     right: 10%;
     top: 15%;
   }
-  
-  /* Footer */
+
   .footer {
     position: fixed;
     bottom: 10px;
