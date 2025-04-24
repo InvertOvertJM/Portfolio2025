@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family:'Times New Roman', Times, serif;
     background-color: #111;
     color: white;
     overflow-x: hidden;
@@ -196,7 +196,7 @@ body {
     display: none;
     z-index: 1000;
     color: white;
-    font-family: sans-serif;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   .ore-gui-content {
@@ -218,7 +218,6 @@ body {
     cursor: pointer;
   }
   
-  /* Ore Row Layout */
   .ore-row {
     display: flex;
     align-items: center;
@@ -252,7 +251,6 @@ body {
     background: #00dfff;
   }
   
-  /* Optional: different layout for text areas */
   .ore-description {
     flex: 1;
     font-size: 18px;
