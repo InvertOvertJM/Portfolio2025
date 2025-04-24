@@ -61,6 +61,7 @@ body {
   .ore {
     width: 60px;
     height: 60px;
+    
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     cursor: pointer;
@@ -72,10 +73,13 @@ body {
   
   .white {
     background-color: #fff;
+    color: royalblue
   }
   
   .cyan {
     background-color: #00ffff;
+    color: blue;
+    font-size: 20px;
   }
   
   .gray {
@@ -180,4 +184,110 @@ body {
   
   .phone-btn {
     background-color: #4CAF50; 
+  }
+
+  .ore-gui {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 30, 30, 0.9);
+    display: none;
+    z-index: 1000;
+    color: white;
+    font-family: sans-serif;
+  }
+  
+  .ore-gui-content {
+    position: relative;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Ore Row Layout */
+  .ore-row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border-bottom: 2px solid #555;
+    padding-bottom: 20px;
+  }
+  
+  .ore-shape {
+    width: 100px;
+    height: 100px;
+    background: gray;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .ore-shape.bronze {
+    background: #a5641c;
+  }
+  
+  .ore-shape.white {
+    background: #eee;
+  }
+  
+  .ore-shape.cyan {
+    background: #00dfff;
+  }
+  
+  /* Optional: different layout for text areas */
+  .ore-description {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+  }
+
+  #scalingG{
+    display:none;
+  }
+
+  #faithG{
+    display:none;
+  }
+
+  #lobG{
+    display:none;
+  }
+
+  #clasherv1G{
+    display:none;
+  }
+
+  #themedG{
+    display:none;
+  }
+
+  #newsG{
+    display:none;
+  }
+
+  #clasherv2G{
+    display:none;
+  }
+
+  #wcorpG{
+    display:none;
   }
