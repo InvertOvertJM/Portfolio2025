@@ -20,7 +20,7 @@ $(document).ready(function () {
     const clampedIndex = Math.min(frameIndex, totalFrames - 1);
     stickmanImg.src = images[clampedIndex];
 
-    stickman.css("top", `${scrollTop * 1.6}px`);
+    stickman.css("top", `${scrollTop * 1.8}px`);
   });
 
   $("#scaling").click(function () {
@@ -78,6 +78,10 @@ $(document).ready(function () {
 
   $("#closeOreGUI").click(function (){
     $("#oreGUI").css("display","none");
+  });
+
+  $("#phoneBtn").click(function () {
+    alert("PHONE")
   });
 });
 
