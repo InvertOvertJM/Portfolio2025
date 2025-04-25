@@ -16,61 +16,52 @@
     <div class="project-layer">
       <div class="crack left"></div>
       <div class="project">
-        <a>
-        <div class="ore bronze" id="scaling"><br>Scaling Website</div>
-      </a>
+        <div class="ore bronze" id="scaling">Scaling Website</div>
+      </div>
+      <div class="project">
+        <div class="ore bronze" id="faith">Faith App</div>
       </div>
       <div class="crack right"></div>
-      <div class="project">
-        <div class="ore bronze" id="faith"><br>Faith App</div>
-      </div>
-      <div class="rock left"></div>
-      <div class="stalactite left"></div>
     </div>
-
+  
     <div class="project-layer">
       <div class="crack left"></div>
       <div class="project">
-        <div class="ore bronze" id="lob"><br>LobCorp</div>
+        <div class="ore white" id="lob">LobCorp</div>
+      </div>
+      <div class="project">
+        <div class="ore white" id="clasherv1">Clash V1</div>
       </div>
       <div class="crack right"></div>
-      <div class="project">
-        <div class="ore white" id="clasherv1"><br>Clash V1</div>
-      </div>
-      <div class="rock right"></div>
-      <div class="stalactite right"></div>
     </div>
-
+  
     <div class="project-layer">
       <div class="crack left"></div>
       <div class="project">
-        <div class="ore white" id="themed"><br>Themed Website</div>
+        <div class="ore cyan" id="themed">Themed Website</div>
+      </div>
+      <div class="project">
+        <div class="ore cyan" id="news">News</div>
       </div>
       <div class="crack right"></div>
-      <div class="project">
-        <div class="ore cyan" id="news"><br>News</div>
-      </div>
-      <div class="rock left"></div>
-      <div class="stalactite left"></div>
     </div>
-
+  
     <div class="project-layer">
       <div class="crack left"></div>
       <div class="project">
         <div class="ore cyan" id="clasher">Clash V2</div>
       </div>
-      <div class="crack right"></div>
       <div class="project">
         <div class="ore cyan" id="wcorp">W Corp</div>
       </div>
-      <div class="rock right"></div>
-      <div class="stalactite right"></div>
+      <div class="crack right"></div>
     </div>
   </div>
+  
 
   <div class="rope">
     <div class="stickman">
-      <img id="stickman-img" src="sequence/1.jfif">
+      <img id="stickman-img" src="sequence/1.png">
     </div>
   </div>
 
@@ -89,25 +80,34 @@
       <button class="close-btn" id="closeOreGUI">×</button>
       <h1>Click On Ores to Learn More:</h1>
       <div class="ore-row bronze-row">
-        <div class="ore-shape bronze" id="scalingG">ScalingWebsite</div>
-        <div class="ore-shape bronze" id="faithG"> Faith</div>
-        <div class="ore-shape bronze" id="lobG"> LobCorp</div>
+        <div class="ore-shape bronze" id="scalingG"><span class="text">Scaling</span></div>
+        <div class="ore-shape bronze" id="faithG"><span class="text">Faith</span></div>
+        <div class="ore-shape bronze" id="lobG"><span class="text">LobCorp</span></div>
       </div>
   
       <div class="ore-row white-row">
-        <div class="ore-shape white" id="clasherv1G">ClasherV1</div>
-        <div class="ore-shape white" id="themedG">Themed Website</div>
+        <div class="ore-shape white" id="clasherv1G"><span class="text">ClasherV1</span></div>
+        <div class="ore-shape white" id="themedG"><span class="text">Themed</span></div>
       </div>
   
       <div class="ore-row cyan-row">
-        <div class="ore-shape cyan" id="newsG">Newsletter</div>
-        <div class="ore-shape cyan" id="clasherv2G">ClasherV2</div>
-        <div class="ore-shape cyan" id="wcorpG">W Corp</div>
+        <div class="ore-shape cyan" id="newsG"><span class="text">Newsletter</span></div>
+        <div class="ore-shape cyan" id="clasherv2G"><span class="text">ClasherV2</span></div>
+        <div class="ore-shape cyan" id="wcorpG"><span class="text">W Corp</span></div>
       </div>
     </div>
-  </div>
+</div>
 
-  <div id="phoneGUI"></div>
+
+  <div id="oreDetailGUI" class="ore-detail-gui">
+    <div class="ore-detail-content">
+      <button id="closeOreDetailGUI">×</button>
+      <h2 id="oreTitle"></h2>
+      <p><strong>Classification:</strong> <span id="oreType"></span></p>
+      <p id="oreDescription"></p>
+      <a id="oreLink" href="#" target="_blank">View Project</a>
+    </div>
+  </div>
 
   <script src="script.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
