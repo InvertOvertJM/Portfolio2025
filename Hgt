@@ -1,0 +1,56 @@
+<div id="phoneGUI" class="phone-gui">
+  <div class="phone-content">
+    <button id="closePhoneGUI">×</button>
+    <h2>About</h2>
+    <p id="aboutText">
+      <!-- You can edit this text -->
+      I'm a passionate web developer who loves turning wild ideas into functional and creative websites.
+    </p>
+    <h2>Contact</h2>
+    <p id="contactText">
+      <!-- You can edit this text -->
+      Email: you@example.com<br>
+      GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a>
+    </p>
+  </div>
+</div>
+
+.phone-gui {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background-color: #1c1c1c;
+  color: #fff;
+  z-index: 1000;
+  transition: bottom 0.4s ease;
+  padding: 20px;
+  box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.6);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.phone-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#closePhoneGUI {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+// Open the phone GUI
+$("#phoneButton").on("click", function () {
+  gsap.to("#phoneGUI", { bottom: 0, duration: 0.4 });
+});
+
+// Close the phone GUI
+$("#closePhoneGUI").on("click", function () {
+  gsap.to("#phoneGUI", { bottom: "-100%", duration: 0.4 });
+});
