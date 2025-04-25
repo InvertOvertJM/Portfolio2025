@@ -6,9 +6,13 @@ body {
 }
 
 .cave-bg {
-  background: linear-gradient(to bottom, #2b2b2b 0%, #1a1a1a 100%);
+  background: linear-gradient(to bottom, #a5a5a5 10%, #1a1a1a 100%);
   padding-top: 60px;
   position: relative;
+}
+
+a{
+  color: #00dfff;
 }
 
 .rope {

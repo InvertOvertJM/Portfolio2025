@@ -22,7 +22,7 @@ $(document).ready(function () {
     const clampedIndex = Math.min(frameIndex, totalFrames - 1);
     stickmanImg.src = images[clampedIndex];
 
-    stickman.css("top", `${scrollTop * 1.48}px`);
+    stickman.css("top", `${scrollTop * 1.18}px`);
   });
 
   $("#scaling").click(function () {
